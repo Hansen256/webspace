@@ -69,6 +69,7 @@ nav {
     z-index: 1000;
     padding: 1.5rem 5%;
     background: rgba(10, 10, 31, 0.8);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
 }
@@ -278,6 +279,7 @@ nav {
 
 .team-card {
     background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
@@ -345,6 +347,7 @@ nav {
     max-width: 800px;
     margin: 0 auto;
     background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
     border-radius: 30px;
@@ -440,6 +443,239 @@ footer p {
     font-size: 0.95rem;
 }
 
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-copyright {
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: var(--primary-cyan);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.footer-link:hover {
+    color: var(--primary-purple);
+    text-decoration: underline;
+}
+
+.footer-tagline {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* ===========================
+   Privacy Consent Styles
+   =========================== */
+
+.privacy-consent-group {
+    margin-top: 2rem;
+}
+
+.privacy-consent-label {
+    display: flex;
+    align-items: start;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.privacy-checkbox {
+    margin-top: 0.3rem;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.privacy-consent-text {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.policy-link {
+    color: var(--primary-cyan);
+    text-decoration: underline;
+}
+
+.policy-link:hover {
+    color: var(--primary-purple);
+}
+
+.data-notice {
+    background: rgba(99, 102, 241, 0.1);
+    border-left: 3px solid var(--primary-cyan);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.data-notice-text {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===========================
+   Contact Section
+   =========================== */
+
+.contact-section {
+    padding: 4rem 5%;
+    background: rgba(10, 10, 31, 0.5);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    background: var(--glass-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-smooth);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-purple);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card-title {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.contact-label {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
+}
+
+.contact-label-spacing {
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.contact-link {
+    color: var(--primary-cyan);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.contact-link:hover {
+    color: var(--primary-purple);
+    text-decoration: underline;
+}
+
+.contact-hours {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.contact-phone {
+    color: var(--primary-cyan);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: var(--transition-fast);
+}
+
+.contact-phone:hover {
+    color: var(--primary-purple);
+}
+
+.contact-location {
+    color: white;
+}
+
+.contact-appointment {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+}
+
+.business-info {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 15px;
+    border: 1px solid var(--glass-border);
+}
+
+.business-info-text {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.8;
+}
+
+.business-info-strong {
+    color: white;
+}
+
+/* ===========================
+   Legal Pages Utility Classes
+   =========================== */
+
+.return-home-link {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dpo-info {
+    margin-top: 1.5rem;
+}
+
 /* ===========================
    Responsive Design
    =========================== */
@@ -460,6 +696,19 @@ footer p {
 
     .form-container {
         padding: 2rem 1.5rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
     }
 }
 

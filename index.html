@@ -8,6 +8,19 @@
         content="WebSpace Uganda - Professional web development services with a dedicated team of experts. Transform your digital presence with custom websites tailored to your specifications.">
     <meta name="keywords"
         content="web development Uganda, website design, digital marketing, SEO, web development services">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' data: https:;">
+    
+    <!-- Trust & Verification -->
+    <meta name="author" content="WebSpace Uganda">
+    <meta name="contact" content="support@webspaceuganda.com">
+    <meta name="robots" content="index, follow">
+    
     <title>WebSpace Uganda - Professional Web Development Services</title>
 
     <!-- Google Fonts -->
@@ -252,14 +265,84 @@
                         placeholder="Share links to websites you like or want to use as inspiration..."></textarea>
                 </div>
 
+                <div class="form-group privacy-consent-group">
+                    <label class="privacy-consent-label">
+                        <input type="checkbox" id="privacyConsent" name="privacyConsent" required class="privacy-checkbox">
+                        <span class="privacy-consent-text">
+                            I agree to the <a href="privacy-policy.html" target="_blank" class="policy-link">Privacy Policy</a> 
+                            and <a href="terms-of-service.html" target="_blank" class="policy-link">Terms of Service</a>. 
+                            I consent to WebSpace Uganda collecting and processing my personal information as described in the Privacy Policy.
+                        </span>
+                    </label>
+                </div>
+
+                <div class="data-notice">
+                    <p class="data-notice-text">
+                        🔒 <strong>Your Privacy Matters:</strong> Your information will only be used to respond to your inquiry and provide our services. 
+                        We never sell or share your data with third parties. Read our <a href="privacy-policy.html" class="policy-link">Privacy Policy</a> for details.
+                    </p>
+                </div>
+
                 <button type="submit" class="submit-button">Submit Project Request</button>
             </form>
         </div>
     </section>
 
+    <!-- Contact & Transparency Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="contact-title">Get In Touch</h2>
+            <p class="contact-subtitle">Have questions? We're here to help. Contact us through any of these channels.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3 class="contact-card-title">Email Us</h3>
+                    <p class="contact-label">General Inquiries:</p>
+                    <a href="mailto:info@webspaceuganda.com" class="contact-link">info@webspaceuganda.com</a>
+                    <p class="contact-label contact-label-spacing">Support:</p>
+                    <a href="mailto:support@webspaceuganda.com" class="contact-link">support@webspaceuganda.com</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3 class="contact-card-title">Call Us</h3>
+                    <p class="contact-label">Business Hours:</p>
+                    <p class="contact-hours">Mon-Fri: 8AM - 6PM EAT</p>
+                    <a href="tel:+256700000000" class="contact-phone">+256 700 000 000</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3 class="contact-card-title">Visit Us</h3>
+                    <p class="contact-label">Office Location:</p>
+                    <p class="contact-location">Kampala, Uganda</p>
+                    <p class="contact-appointment">By appointment only</p>
+                </div>
+            </div>
+            
+            <div class="business-info">
+                <p class="business-info-text">
+                    <strong class="business-info-strong">Registered Business:</strong> WebSpace Uganda is a legitimate web development service provider operating in Kampala, Uganda. 
+                    We are committed to transparency, data protection, and ethical business practices.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 WebSpace Uganda. All rights reserved. | Crafting Digital Excellence</p>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="footer-copyright">&copy; 2025 WebSpace Uganda. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <p class="footer-tagline">Crafting Digital Excellence | Protecting Your Privacy</p>
+        </div>
     </footer>
 
     <!-- JavaScript -->
